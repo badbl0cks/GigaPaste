@@ -23,6 +23,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - run: rm -rf .git # prevent build errors since buildvcs=true if there's a .git dir
       - uses: int128/kaniko-action@v1
         with:
           push: true
