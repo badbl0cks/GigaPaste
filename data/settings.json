@@ -1,5 +1,5 @@
 {
-	"fileSizeLimitMB":  100,
+	"fileSizeLimitMB":  9999999,
 	"textSizeLimitMB": 10,
 	"streamSizeLimitKB": 1024,
 	"streamThrottleMS": 25,
